@@ -31,7 +31,7 @@ test("алфавит passport: паспортный", () => {
   assert.equal(lettersOf("passport"),
     "а=a б=b в=v г=g д=d е=e ё=e ж=zh з=z и=i й=i к=k л=l м=m н=n о=o п=p р=r с=s т=t у=u ф=f х=kh ц=ts ч=ch ш=sh щ=shch ъ=ie ы=y ь= э=e ю=iu я=ia");
   assert.equal(translit("Привет, жёлтый щенок", "passport"), "Privet, zheltyi shchenok");
-  assert.equal(translit("Юлия Хрущёва", "passport"), "Iuliia Khrushcheva");
+  assert.equal(translit("Юлия Щёголева", "passport"), "Iuliia Shchegoleva");
 });
 
 test("алфавит iso9: ISO 9", () => {
